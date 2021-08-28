@@ -1,0 +1,53 @@
+/* * { 
+    box-sizing: border-box; 
+} */
+
+/* force scrollbar, prevents initial gap */
+/* html {
+  overflow-y: scroll; 
+}
+
+body {
+  font-family: sans-serif;
+} */
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+.grid-item,
+.grid-sizer {
+  width: 0%;
+}
+
+.grid-item {
+  /* float: left; */
+  /* height: 100px; */
+  border: 1px solid #ccc;
+  border-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.grid-item--width2 { 
+    width: 25%; 
+}
+.grid-item--height2 { 
+    height: 700px; 
+}
+.grid-item--width3{
+    width: 50%;
+}
+.grid-item--height3{
+    height: 351px;
+}
